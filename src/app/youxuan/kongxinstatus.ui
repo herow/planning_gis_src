@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KongXinStatus</class>
+ <widget class="QWidget" name="KongXinStatus">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>322</width>
+    <height>308</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>空心化情况</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>村庄空心化程度 ：</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>201</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>常住人口比重</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>废弃率</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>空置率</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>空废宗地聚集度</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>值</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>60</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>40</string>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>50</string>
+    </property>
+   </item>
+   <item row="3" column="0">
+    <property name="text">
+     <string>30</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

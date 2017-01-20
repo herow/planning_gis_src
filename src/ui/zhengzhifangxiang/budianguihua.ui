@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BuDianGuiHua</class>
+ <widget class="QWidget" name="BuDianGuiHua">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>718</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>村庄布点规划</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>请选择乡镇</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox"/>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>权值设置</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <attribute name="headerDefaultSectionSize">
+        <number>300</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>指标</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>权值</string>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>空心化程度</string>
+        </property>
+        <property name="text">
+         <string>0.2</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>村庄户籍人口密度 </string>
+         </property>
+         <property name="text">
+          <string>0.5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>村庄常住人口比重</string>
+         </property>
+         <property name="text">
+          <string>0.5</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>村庄规模</string>
+        </property>
+        <property name="text">
+         <string>0.2</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>人口规模</string>
+         </property>
+         <property name="text">
+          <string>0.7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>年末拥有耕地面积</string>
+         </property>
+         <property name="text">
+          <string>0.3</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>经济发展</string>
+        </property>
+        <property name="text">
+         <string>0.2</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>农作物总产量</string>
+         </property>
+         <property name="text">
+          <string>0.4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>肉类总产量</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>二三产业从业人数占村总从业人数比重</string>
+         </property>
+         <property name="text">
+          <string>0.4</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>公共服务设施</string>
+        </property>
+        <property name="text">
+         <string>0.1</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>是否有小学_幼儿园</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是否有卫生所</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>图书室_文化站的藏书量</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是否有体育活动场所</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>是否有50平米以上的综合商店或超市个数</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>市政基础设施</string>
+        </property>
+        <property name="text">
+         <string>0.1</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>通公路的自然村比重</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>通自来水的自然村比重</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>通电的自然村比重</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>通电话的自然村比重</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>完成厕改的自然村比重</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>生活质量</string>
+        </property>
+        <property name="text">
+         <string>0.1</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>拥有彩电的户数</string>
+         </property>
+         <property name="text">
+          <string>0.3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>拥有电话的户数</string>
+         </property>
+         <property name="text">
+          <string>0.3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>参加农村新型合作医疗人数</string>
+         </property>
+         <property name="text">
+          <string>0.3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>享受最低生活保障人数</string>
+         </property>
+         <property name="text">
+          <string>0.1</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>人口竞争力</string>
+        </property>
+        <property name="text">
+         <string>0.1</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>在校高中生人数</string>
+         </property>
+         <property name="text">
+          <string>0.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>从业人员占常住人口比重</string>
+         </property>
+         <property name="text">
+          <string>0.8</string>
+         </property>
+        </item>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>评价标准</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <row>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>B1</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>B2</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>B3</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>B4</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>类型</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>整治方向</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>等级</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>S值范围</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>村改居</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>村庄综合发展能力好，全面村改居纳入镇区发展范围，空心村整治迁入地</string>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string>（镇）</string>
+        </property>
+       </item>
+       <item row="0" column="3">
+        <property name="text">
+         <string>70-100</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>重点发展</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>村庄综合发展能力较好，重点发展培育中心村，结合空心村整治迁建村民</string>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="text">
+         <string>中心村</string>
+        </property>
+       </item>
+       <item row="1" column="3">
+        <property name="text">
+         <string>60-70</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>积极发展</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>村庄综合发展能力较好，积极发展为重点基层村，适当接受空心村整治迁建村民</string>
+        </property>
+       </item>
+       <item row="2" column="2">
+        <property name="text">
+         <string>重点村</string>
+        </property>
+       </item>
+       <item row="2" column="3">
+        <property name="text">
+         <string>50-60</string>
+        </property>
+       </item>
+       <item row="3" column="0">
+        <property name="text">
+         <string>适度发展</string>
+        </property>
+       </item>
+       <item row="3" column="1">
+        <property name="text">
+         <string>村庄自身发展条件一般，但有潜力可挖，发展为一般基层村，空心村就地整治</string>
+        </property>
+       </item>
+       <item row="3" column="2">
+        <property name="text">
+         <string>基层村</string>
+        </property>
+       </item>
+       <item row="3" column="3">
+        <property name="text">
+         <string>40-50</string>
+        </property>
+       </item>
+       <item row="4" column="0">
+        <property name="text">
+         <string>限制发展</string>
+        </property>
+       </item>
+       <item row="4" column="1">
+        <property name="text">
+         <string>村庄自身发展条件较差，限制村庄扩建，引导空心村异地合并整治</string>
+        </property>
+       </item>
+       <item row="4" column="2">
+        <property name="text">
+         <string>基层村</string>
+        </property>
+       </item>
+       <item row="4" column="3">
+        <property name="text">
+         <string>20-40</string>
+        </property>
+       </item>
+       <item row="5" column="0">
+        <property name="text">
+         <string>迁移村庄</string>
+        </property>
+       </item>
+       <item row="5" column="1">
+        <property name="text">
+         <string>村庄自身发展条件较差，禁止村庄扩建，强制空心村搬迁整治</string>
+        </property>
+       </item>
+       <item row="5" column="2">
+        <property name="text">
+         <string>基层村</string>
+        </property>
+       </item>
+       <item row="5" column="3">
+        <property name="text">
+         <string>0-20</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="1">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

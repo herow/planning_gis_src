@@ -1,0 +1,19 @@
+[general]
+name=MetaSearch Catalogue Client
+description=MetaSearch is a QGIS plugin to interact with metadata catalogue services (CSW).
+category=Web
+version=0.3.2
+qgisMinimumVersion=2.0
+icon=images/MetaSearch.png
+author=Tom Kralidis
+email=tomkralidis@gmail.com
+tags=web,catalogue,service,metadata,csw
+homepage=https://hub.qgis.org/projects/MetaSearch
+tracker=https://hub.qgis.org/projects/MetaSearch/issues
+repository=https://github.com/qgis/QGIS/tree/master/python/plugins/MetaSearch
+experimental=False
+deprecated=False
+changelog=Version 0.3.2 (2014-11-04)
+    - fix message formatting
+    - add server timeout as plugin setting
+    - bump OWSLib dependency

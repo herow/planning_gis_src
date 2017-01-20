@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KXCPlanningFrm</class>
+ <widget class="QWidget" name="KXCPlanningFrm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>865</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" columnstretch="1,4">
+   <item row="0" column="0">
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="allColumnsShowFocus">
+      <bool>false</bool>
+     </property>
+     <attribute name="headerVisible">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>整治区片划分</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>生态适宜性评价</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>生态适宜性分级</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>整治区片划分</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>整治方向选择</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>村庄布点规划</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>整治模式选择</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>整治因素录入</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>整治因素浏览</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>整治模式浏览</string>
+       </property>
+      </item>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page"/>
+     <widget class="QWidget" name="page_2"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
